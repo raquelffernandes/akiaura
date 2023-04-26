@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/imgs/colar.icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>AKIAURA Clothing Store</title>
+</head>
+<body class="bg-dark">
+  <main class="bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark" >
+      <div class="container-fluid">
+              <!--Navbar-->
+              <a class="navbar-brand" href="#">
+                  <img src="assets/imgs/colar.icon.png" alt="hearts" width="40" height="40">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mb-auto p-0 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clothing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Makeup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acessories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="INFO.html">INFO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tops</a></li>
+                  <li><a class="dropdown-item" href="#">Shirts</a></li>
+                  <li><a class="dropdown-item" href="#">Jackets</a></li>
+                  <li><a class="dropdown-item" href="#">Sweaters</a></li>
+                  <li><a class="dropdown-item" href="#">Pants</a></li>
+                  <li><a class="dropdown-item" href="#">Shorts</a></li>
+                  <li><a class="dropdown-item" href="#">Skirts</a></li>
+                  <li><a class="dropdown-item" href="#">Bags</a></li>
+                  <li><a class="dropdown-item" href="#">Necklaces</a></li>
+                  <li><a class="dropdown-item" href="#">Shoes</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!--Search bar-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Tops, shirts, skirts, bags... " aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <!---Cart, wishlist, login, customer service-->
+            <button type="button" class="btn btn-dark" title="Cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-dark" title="Wishlist">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-heart-fill" viewBox="-1 1 18 11">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-dark" title="Login">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-dark" title="Support">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </nav>
+      <!--Carousel-->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/imgs/slider-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/slider-2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/slider-3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/slider-6.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Images-->
+      <div class="feature">
+        <div class="image-1">
+          <img class="img-1" src="assets/imgs/img-1.png" width="210" height="210" alt="">
+            <p><strong><mark>#1</mark></strong> INSPIRATION</p>
+        </div>
+        <div class="image-1">
+          <img class="img-1" src="assets/imgs/img-2.png" width="210" height="210" alt="">
+            <p><strong><mark>#2</mark></strong> INSPIRATION</p>
+        </div>
+        <div class="image-1">
+          <img class="img-1" src="assets/imgs/img-3.png" width="210" height="210" alt="">
+            <p><strong><mark>#3</mark></strong> INSPIRATION</p>
+        </div>
+        <div class="image-1">
+          <img class="img-1" src="assets/imgs/img-4.png" width="210" height="210" alt="">
+            <p><strong><mark>#4</mark></strong> INSPIRATION</p>
+        </div>
+        <div class="image-1">
+          <img class="img-1" src="assets/imgs/img-5.png" width="210" height="210" alt="">
+            <p><strong><mark>#5</mark></strong> INSPIRATION</p>
+        </div>
+      </div>
+      <!--Text section-->
+      <div class="container">
+        <h1><mark>FREE SHIPPING OVER $50!</mark></h1><br>
+          <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dolor ipsum magnam maxime eveniet? Aliquam nobis libero velit suscipit reprehenderit sequi in nostrum animi iste perferendis illum,
+            praesentium maiores distinctio eligendi.Aenean faucibus leo vel massa feugiat sollicitudin.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec varius sem risus, vel laoreet augue tempor vitae.
+            <b>Cras augue dolor, elementum quis feugiat a, vestibulum a tortor.</b>Pellentesque interdum tempor arcu, posuere aliquet elit dignissim at.
+            In hac habitasse platea dictumst. Duis ut lacinia odio. Aliquam malesuada metus a euismod placerat. Aliquam erat volutpat.
+            Suspendisse commodo ac magna id viverra. Sed non mollis turpis. Vivamus eu mauris quis orci vulputate tincidunt ac id leo.
+            Nunc lorem enim, accumsan non bibendum vitae, gravida sit amet magna. Integer non est sed mi porttitor sagittis et a elit.
+            Duis at nisi id massa eleifend sagittis. Suspendisse potenti. Nam ac mauris in urna accumsan feugiat et nec sapien. 
+            Praesent ullamcorper at elit ut tincidunt. Duis sed arcu egestas, scelerisque metus vel, mattis dolor.
+            Sed ultricies a mi eget aliquet. Nunc magna velit.</p>
+      </div>
+      <!--Image with text section-->
+      <div class="wrapper">
+          <video src="assets/imgs/video.mp4" class="object-fit-contain" autoplay loop muted></video>
+        <div class="text-light text-box">
+          <h3><mark>Fall/Winter Collection 2023</mark></h3>
+            <p><i>Etiam velit arcu, luctus eu auctor in, lobortis eget risus. Etiam accumsan faucibus hendrerit.
+              Vivamus posuere nunc a metus ullamcorper ornare. Integer hendrerit vehicula gravida.
+              Praesent finibus, nunc at accumsan laoreet, sapien lorem eleifend eros, quis iaculis lorem velit a dui.
+              Quisque tellus est, convallis et ex sed, egestas pellentesque dolor.</i></p>
+            <p><i>Nulla vitae nisl rutrum, auctor augue quis, luctus arcu. Praesent a sem lobortis, feugiat est nec,
+              faucibus magna. Nulla quis elementum metus, eu pretium nunc. Phasellus rutrum ligula nunc, ac cursus.
+              Curabitur elementum vitae nunc a interdum.Etiam velit arcu, luctus eu auctor in, lobortis eget risus.
+              Quisque tellus est, convallis et ex sed, egestas pellentesque dolor.</i></p>
+            <p><i>Sed id ultrices sapien. Nullam vel cursus odio. Integer commodo nulla ut metus dictum tristique.
+              Proin sodales mattis sapien, porttitor rutrum massa gravida et.
+              Curabitur bibendum tortor a est placerat malesuada.
+              In ullamcorper nisi sed elit accumsan convallis. Fusce id leo dictum nisl convallis porttitor.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              Nullam posuere, erat vitae eleifend imperdiet, purus sem volutpat nibh, vestibulum vitae libero.</i></p>
+        </div>
+      </div>
+      <!--Shopping Section-->
+      <div class="cards">
+        <div class="card border-2 rounded border-dark rounded-5 " style="width: 20rem;">
+          <img src="assets/imgs/card-1.png" class="card-img-top rounded-5" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title">Vampyr Crypt Ring Set</h5>
+            <p class="card-text">Sed id ultrices sapien. Nullam vel cursus odio.
+              <br><a href="#">Details</a></p>
+            <button type="button" class="btn btn-warning btn-lg rounded-5" data-bs-toggle="modal" data-bs-target="#buying-modal">BUY<b>$5</b></button>
+          </div>
+        </div>
+        <div class="card border-2 rounded border-dark rounded-5 " style="width: 20rem;">
+          <img src="assets/imgs/card-2.png" class="card-img-top rounded-5" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title">Rebel Guys Shirts</h5>
+            <p class="card-text">Sed id ultrices sapien. Nullam vel cursus odio.
+              <br><a href="#">Details</a></p>
+            <button type="button" class="btn btn-warning btn-lg rounded-5" data-bs-toggle="modal" data-bs-target="#buying-modal">BUY<b>$35</b></button>
+          </div>
+        </div>
+        <div class="card border-2 rounded border-dark rounded-5 " style="width: 20rem;">
+          <img src="assets/imgs/card-3.png" class="card-img-top rounded-5" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title">Fashion Sunglasses</h5>
+            <p class="card-text">Sed id ultrices sapien. Nullam vel cursus odio.
+              <br><a href="#"><b>Details</b></a></p> 
+            <button type="button" class="btn btn-warning btn-lg rounded-5" data-bs-toggle="modal" data-bs-target="#buying-modal">BUY<b>$20</b></button>
+          </div>
+        </div>
+      </div>
+      <!--Modal-->
+      <div class="modal fade" tabindex="-1" id="buying-modal">
+        <div class="modal-dialog modal-fullscreen-lg-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">PURCHASE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation">
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Name">
+                  <div class="valid-feedback">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name">
+                  <div class="valid-feedback">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="exampleFormControlInput1" class="form-label">Your phone number</label>
+                  <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(555) 5 555-555">
+                  <div class="invalid-feedback">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Country</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose your Country</option>
+                    <option>Argentina</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>Indonesia</option>
+                    <option>Japan</option>
+                    <option>United States</option>
+                    <option>Russia</option>
+                  </select>
+                  <div class="invalid-feedback">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip Code</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                  </div>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Purchase as a gift
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <div id="liveAlertPlaceholder"></div>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal">Add to Wishlist</button>
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--BLOG section-->
+      <div class="container bg-secondary-subtle">
+        <h3>BLOG</h3>
+          <p>Vivamus leo tellus, semper non pretium quis, dignissim laoreet risus. Fusce placerat sem elementum leo tincidunt cursus.
+            Nunc a lacus mattis, consequat urna vel, aliquam ante. Fusce augue augue, volutpat eu libero tempus, sagittis fringilla eros.
+            Curabitur eget metus sapien. Ut iaculis lacus in condimentum tempor. Integer sed odio posuere, porttitor quam convallis, fringilla magna.
+            Vivamus viverra diam vel nulla maximus sagittis. Pellentesque mollis, ligula ut sollicitudin pulvinar, arcu neque lobortis neque.
+            Nec dapibus dui tellus ac dui.Sed tempor elementum purus. Sed rutrum eros eget enim accumsan, quis tristique eros blandit. Nam quis nulla arcu.</p>
+          <p>Praesent id tempus diam, id consectetur magna. Donec feugiat suscipit dolor quis commodo. Quisque in lacinia nisi, posuere hendrerit diam.
+            Mauris consequat fringilla dui sed bibendum. Phasellus commodo malesuada sagittis. Suspendisse aliquet nisi tortor, ac lobortis ligula accumsan eu.
+            Ut eu ex libero. Proin sagittis, dolor sit amet placerat sagittis, tellus massa scelerisque augue, blandit commodo odio justo id dui.
+            Vivamus eget congue quam. Nunc facilisis, velit eget accumsan dignissim, sem turpis placerat elit, nec condimentum risus lectus sed purus.
+            Sed ultrices sollicitudin massa, pharetra varius sapien hendrerit et. Morbi nulla ex, dictum non nunc quis, accumsan ullamcorper dui.
+            Phasellus tempus venenatis consequat.</p>
+          <p>Proin dictum sapien at tincidunt viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Aliquam pharetra turpis eu ornare mattis. Integer at libero sed nisi efficitur feugiat. Mauris in finibus ex, vel maximus sem.
+            Nulla viverra mauris et est egestas, dignissim laoreet ipsum luctus. Nullam porta nunc sed sollicitudin eleifend. Vivamus imperdiet augue erat.
+            At consequat lectus feugiat ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum nisi enim, at laoreet dolor tristique sit amet.
+            Maecenas vestibulum neque nec nulla feugiat, in volutpat magna porttitor. Sed consectetur libero quis mi sollicitudin fermentum. Duis molestie dui ligula.
+            A tempus diam scelerisque quis. Nullam id libero quis libero lacinia lobortis eu non augue. Donec nec ante vel dui vestibulum mattis sit amet eget libero.</p>
+          <p>Praesent sed eros sed orci gravida tempor eget eu turpis. Quisque sagittis magna orci, sit amet feugiat odio finibus ut.
+            Sed euismod mattis justo, a faucibus ex. Vestibulum interdum commodo leo, ac pharetra libero pretium vitae. Maecenas urna sapien.
+            Sodales tincidunt dui sed, finibus eleifend quam. Nam auctor semper urna, in placerat sem malesuada eu. Aenean ac dui vel tortor.
+            Ultrices euismod nec sit amet velit. Mauris risus massa, fermentum vel mollis quis, gravida a velit. Sed arcu est, viverra non ultricies.
+            A euismod a quam. Morbi semper rhoncus diam, rhoncus porta nisl pretium eget. Aenean porta laoreet vestibulum. Duis eu semper arcu.
+            Nec vestibulum libero. Proin accumsan, leo vitae cursus consequat, velit magna posuere erat, ac iaculis tortor neque in risus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum eleifend lorem, ac aliquam lorem convallis ut.
+            Vestibulum purus purus, tempus et lobortis a, molestie a nisl. Fusce suscipit tempus dolor, vitae ornare odio hendrerit ut.
+            Praesent accumsan non orci vitae vestibulum. Suspendisse vulputate porttitor iaculis. Nullam rutrum vitae odio ac congue.
+            Aliquam sed sapien eget nisi condimentum efficitur nec nec sem. Integer molestie neque libero, in aliquet nibh sollicitudin id.
+            Aliquam non euismod quam. Ut vestibulum, dolor eu varius mattis, purus ex suscipit sapien, in interdum nisi dolor a sapien.
+            Mauris interdum enim a orci rhoncus porta. Fusce rhoncus nibh ut libero faucibus, vel mattis augue rhoncus. Ut erat ante.
+            Imperdiet at massa eget, luctus placerat leo. Quisque nec imperdiet elit, sit amet imperdiet quam. Duis consequat nec dolor at elementum.</p>
+          <p>In sodales nulla finibus laoreet suscipit. Aliquam rhoncus libero ac dignissim vehicula. Vestibulum ligula dui, tincidunt id erat sed.
+            Posuere ultrices nunc. Nunc eleifend ligula a dui rutrum mollis. Integer dignissim sodales dolor, at venenatis ante posuere vel.
+            Nunc rhoncus pellentesque ultricies. Sed mollis erat sed libero consectetur pellentesque. Curabitur suscipit nisl nulla.
+            Vel vulputate tellus efficitur sit amet. Cras quis augue at elit pulvinar cursus id non elit. Integer vel quam at ipsum molestie varius vitae sit amet odio.
+            Quisque egestas efficitur purus. Proin consectetur urna et neque aliquet facilisis. Duis at metus mauris. Suspendisse nec orci id est suscipit viverra.
+            Vestibulum faucibus, sem nec condimentum feugiat, ex ligula lobortis justo, nec lobortis lectus dolor eget lacus. Nam condimentum dignissim est.
+            Id congue sapien rhoncus at. Integer vestibulum diam nec dui tempus semper. Mauris dictum erat dui, ut efficitur eros facilisis porta.
+            Donec sed scelerisque nisl, ullamcorper lacinia ligula. Ut egestas nec odio at placerat. Integer in hendrerit magna, vulputate placerat massa.
+            Cras nunc turpis, imperdiet nec ex vitae, commodo porta sapien. </p>
+          <p>Vestibulum condimentum odio a mi imperdiet finibus. Ut lorem nisl, finibus non pretium at, lacinia sit amet velit.
+            Aliquam imperdiet finibus arcu consequat vulputate. Integer vestibulum ligula et dui fringilla bibendum.
+            Cras vitae justo nec ex dignissim ornare et ut quam. Mauris et augue in felis finibus semper. Nullam rhoncus, tortor vitae pretium consequat.
+            Tellus libero consectetur justo, eu aliquet dui nunc non erat. Donec et tellus vulputate, congue est id, vehicula nunc. Cras maximus a eros ac pellentesque.
+            Aenean eros turpis, ornare in quam quis, tempus pretium lectus. Nullam finibus rhoncus tortor eget bibendum.
+            Cras tincidunt lectus in dictum interdum.Aliquam vel commodo diam.
+          </p>        
+      </div>
+      <!--LIMITED EDITION-->
+      <div class="wrapper2">
+          <img src="assets/imgs/7.png" class="object-fit-contain">
+        <div class="text-light text-box 2">
+          <h3><mark>LIMITED EDITION</mark></h3>
+            <p><i>Etiam velit arcu, luctus eu auctor in, lobortis eget risus. Etiam accumsan faucibus hendrerit.
+              Vivamus posuere nunc a metus ullamcorper ornare. Integer hendrerit vehicula gravida.
+              Praesent finibus, nunc at accumsan laoreet, sapien lorem eleifend eros, quis iaculis lorem velit a dui.
+              Quisque tellus est, convallis et ex sed, egestas pellentesque dolor.</i></p>
+            <p><i>Nulla vitae nisl rutrum, auctor augue quis, luctus arcu. Praesent a sem lobortis, feugiat est nec,
+              faucibus magna. Nulla quis elementum metus, eu pretium nunc. Phasellus rutrum ligula nunc, ac cursus.
+              Curabitur elementum vitae nunc a interdum.Etiam velit arcu, luctus eu auctor in, lobortis eget risus.
+              Quisque tellus est.</i></p>
+        </div>
+      </div>
+      <!--Contact section-->
+      <div class="container bg-secondary-subtle text-center">
+        <div class="row align-items-start">
+          <div class="col-md-6">
+            <h3>Contact us</h3>
+              <div class="col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg><i> São João Nepomuceno, MG - Brazil</i>
+              <div class="col-md-11">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 20 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg><i> Phone: +55 (32) 98482-8217</i>
+              </div>
+              <div class="col-md-12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg><i> Email: akiauraclothingstore@hotmail.com</i>
+              </div>
+              </div>
+              <br><p><strong>Service opening times: Monday to Friday</strong></p>
+              <div class="mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                  <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                </svg>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <form action="#" method="post">
+              <div class="col-md-10">
+                <div class="mb-3">
+                  <label for="name" class="form-label"><b>Name</b></label>
+                  <input type="text" class="form-control" id="textarea" placeholder="Type your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label"><b>Email</b></label>
+                <input type="email" class="form-control" id="form-control" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label" required><b>Message</b></label>
+                <textarea class="form-control" id="textarea" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-secondary">SEND</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center text-lg-start text-light" style="background-color: rgb(206, 200, 197);">
+      <!-- Copyright section -->
+      <div class="text-center p-3" style="color: rgb(17, 17, 17);">
+        © 2023 All rights reserved to Raquel F. Fernandes
+      </div>
+    </footer>
+</body>
+</html>

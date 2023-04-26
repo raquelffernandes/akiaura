@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.nav-item{
+    font-size: medium;
+    padding: 8px;
+    opacity: 90%;
+    color: #000000;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    opacity: 100%;
+}
+
+.btn.btn-dark{
+    padding: 5px;
+    margin-left: 15px;
+    border: 1px;
+    border-style: double;
+    background-color: #fffeff;
+    color: rgb(22, 21, 21);
+    border-radius: 50px;
+}
+
+.navbar.navbar-expand-md{
+    font-family: arial, sans-serif;
+    height:60px;
+    width:100%;
+    z-index:1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+#carouselExampleAutoplaying{
+    width: 100%;
+    height: 30;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 0px 75px;
+    filter:grayscale(30%);
+}
+
+.container{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding: auto;
+    text-align: center;
+    font-weight: 300;
+    box-shadow: 0 5px 15px rgba(9, 6, 6, 0.6);
+}
+
+.container mark{
+    font-weight: 100;
+    color: hotpink;
+    box-shadow: 0px 5px 10px rgba(8, 6, 9, 0.6);
+}
+
+.navbar.navbar{
+    display: flex;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.feature{
+    padding: 80px 80px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.60);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-1{
+    width: 100px;
+    text-align: center;
+    border: 1px;
+    width: 210px;
+    height: 210px;
+    background-repeat: no-repeat;
+    border-color: #070a08;
+    color: #fffeff;
+}
+.img-1{
+    border: 5px solid rgb(87, 63, 75);
+    border-radius: 60%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.80);
+    filter: brightness(90%);
+    cursor: pointer;   
+}
+
+.image-1 img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.img-1:hover{
+    filter: saturate(110%);
+}
+
+.text-light p{
+    padding: 0px 50px;
+    font-weight: 300;
+}
+
+.wrapper{
+    margin: 50px auto;
+    width: 80%;
+}
+
+.text-box{
+    width: 80%;
+    text-align: justify;
+}
+
+.text-box h3{
+    text-align: justify;
+    padding-left: 100px;
+    padding-top: 60px;
+    font-weight: 100;
+    padding-bottom: 8px;
+    margin-left: 28px;
+}
+
+.text-box p{
+    text-align: center;
+    padding-top: 13px;
+    font-weight: 300;
+    padding-bottom: 13px;
+}
+
+.text-box mark{
+    color: brown;
+    box-shadow: 1px 5px 10px rgba(22, 15, 15, 0.8);
+}
+
+.wrapper video{
+    margin-top: 49px;
+    float: right;
+    border: 3px solid #fff;
+    border-style: double;
+    border-color: rgb(87, 63, 75);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.80);
+    margin-left: 100px;
+    cursor: pointer;
+    filter:grayscale(30%);
+}
+
+.object-fit-contain{
+    max-width: 600px;
+    max-height: 900px;
+    margin-bottom: 90px;
+}
+
+.cards{
+    padding: 80px 80px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.60);
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.card{
+    box-shadow: 0 5px 15px rgba(9, 6, 8, 0.9);
+}
+
+.card-body{
+    text-align: center;
+}
+
+.btn.btn-warning{
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgb(255, 217, 0);
+}
+
+.btn.btn-warning:hover{
+    background-color: pink;
+    color: #fff;
+    border-color:rgb(10, 80, 80);
+    filter: saturate(120%);
+}
+
+.btn.btn-danger{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    background-color: rgb(186, 62, 62);
+}
+.btn.btn-danger:hover{
+    filter: saturate(120%);
+    border: 2px solid rgb(177, 130, 138);
+}
+
+.btn.btn-secondary{
+    border: 2px solid rgb(21, 20, 20);
+    border-radius: 30px;
+    background-color: rgb(35, 32, 32);
+}
+.btn.btn-secondary:hover{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(24, 23, 23);
+}
+
+/* IMAGE WITH TEXT 2*/
+.wrapper2{
+    margin: 50px auto;
+    width: 90%;
+}
+
+.wrapper2 img {
+    margin-top: 49px;
+    margin-left: 100px;
+    margin-right: 100px;
+    float: left;
+    border: 3px solid #fff;
+    border-style: double;
+    border-color: rgb(87, 63, 75);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.80);
+    cursor: pointer;
+    filter:grayscale(30%);
+    filter: brightness(90%);
+}
+
+/*SOCIAL MEDIA*/
+.bi.bi-instagram:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.bi.bi-facebook:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.bi.bi-whatsapp:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.bi.bi-discord:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 2%;
+    box-shadow: 0 10px 10px rgba(6, 4, 4, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
